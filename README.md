@@ -1,46 +1,117 @@
 # Ustad Android POC
 
-AI Agent Android Application - Proof of Concept
+> A proof-of-concept Android application for the Ustad learning platform
 
-## Project Structure
+[![Build Status](https://img.shields.io/badge/build-setup-yellow)](https://github.com/erdalgunes/ustad-android-poc)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue)](CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-This project uses Git worktrees for efficient branch management:
+## 🚀 Quick Start
 
+```bash
+# Clone the repository
+git clone https://github.com/erdalgunes/ustad-android-poc.git
+cd ustad-android-poc
+
+# Open in Android Studio
+# File -> Open -> Select project directory
+
+# Build and run
+./gradlew assembleDebug
 ```
-ustad-android-poc-workspace/
-├── ustad-android-poc.git/     # Bare repository
-├── main/                       # Main branch worktree
-└── develop/                    # Development branch worktree
-```
 
-## Features
+## 📱 About
 
-- AI Agent integration for intelligent assistance
-- Modern Android architecture with Jetpack Compose
-- Clean Architecture principles
-- SOLID design patterns
+The Ustad Android POC is a proof-of-concept mobile application designed to explore and validate key technical approaches for the Ustad learning platform on Android devices.
 
-## Tech Stack
+### Key Features (Planned)
+- 🔐 User authentication and session management
+- 📱 Modern Android UI with Jetpack Compose
+- 💾 Offline-capable content delivery
+- 🎥 Media playback and interactions
+- 📊 Analytics and progress tracking
 
-- Kotlin
-- Jetpack Compose
-- ViewModel & StateFlow
-- Coroutines
-- AI/ML Integration (TBD)
+## 🏗️ Architecture
 
-## Getting Started
+- **Language**: Kotlin
+- **UI**: Jetpack Compose
+- **Architecture**: MVVM + Repository Pattern
+- **DI**: Hilt
+- **Database**: Room
+- **Networking**: Retrofit + OkHttp
 
-1. Clone the workspace
-2. Open the desired worktree in Android Studio
+## 📚 Documentation
+
+Comprehensive documentation is available in our [Project Wiki](wiki/Home.md):
+
+- [📋 Project Overview](wiki/Project-Overview.md) - Goals, features, and timeline
+- [⚡ Quick Start Guide](wiki/Quick-Start-Guide.md) - Get up and running quickly
+- [🏗️ Architecture Overview](wiki/Architecture-Overview.md) - Technical architecture
+- [👨‍💻 Development Guidelines](wiki/Development-Guidelines.md) - Coding standards
+
+## 🛠️ Development
+
+### Prerequisites
+- Android Studio Arctic Fox or later
+- JDK 11 or higher
+- Android SDK 21+ (Android 5.0+)
+
+### Setup
+1. Clone the repository
+2. Open in Android Studio
 3. Sync project with Gradle files
-4. Run the app
+4. Run on device/emulator
 
-## Development Workflow
+For detailed setup instructions, see [Environment Setup](wiki/Environment-Setup.md).
 
-- `main/` - Stable releases
-- `develop/` - Active development
-- Feature branches created as needed
+## 🤝 Contributing
 
-## License
+We welcome contributions! Please see our:
 
-POC - For demonstration purposes only
+- [Contributing Guidelines](wiki/Contributing.md)
+- [Code Style Guide](wiki/Code-Style-Guide.md)
+- [Development Guidelines](wiki/Development-Guidelines.md)
+
+### Reporting Issues
+- 🐛 [Bug Report](https://github.com/erdalgunes/ustad-android-poc/issues/new?template=bug_report.yml)
+- ✨ [Feature Request](https://github.com/erdalgunes/ustad-android-poc/issues/new?template=feature_request.yml)
+- ❓ [General Question](https://github.com/erdalgunes/ustad-android-poc/issues/new?template=general_inquiry.yml)
+
+## 🧪 Testing
+
+```bash
+# Run unit tests
+./gradlew test
+
+# Run instrumentation tests
+./gradlew connectedAndroidTest
+
+# Generate test report
+./gradlew jacocoTestReport
+```
+
+## 📈 Project Status
+
+| Component | Status |
+|-----------|--------|
+| Project Setup | ✅ Complete |
+| Architecture | 🚧 In Progress |
+| Core Features | ⏳ Planned |
+| Testing | ⏳ Planned |
+| Documentation | ✅ In Progress |
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Ustad Project](https://github.com/UstadMobile) - Parent project
+- Android Jetpack Team - For excellent development tools
+- Open source community - For inspiration and libraries
+
+---
+
+**Project Lead**: [@erdalgunes](https://github.com/erdalgunes)  
+**Created**: 2025-01-05  
+**Last Updated**: 2025-01-05
